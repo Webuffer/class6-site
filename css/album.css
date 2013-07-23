@@ -1,0 +1,105 @@
+body {
+	font-family: Microsoft Yahei, arial, sans-serif, verdana, helvetica; 
+	font-size: 14px; 
+	padding-top: 0px;
+}
+#featurecontainer {
+	margin: 0px auto; 
+	width: 923px;
+}
+#feature {
+	position: relative; 
+	margin-top: 5px; 
+	margin-bottom: 20px; 
+}
+#feature .button {
+	position: absolute; 
+	width: 840px; 
+	top: 72px; 
+	left: 0px;
+}
+#feature a:link, a:visited, a:active{
+	text-decoration: none;
+}
+#feature .prev {
+	width: 65px; 
+	height: 48px;
+	text-indent: -9999px; 
+	float: left; 
+	margin-left:130px; 
+	top:3px;
+	display: block; 
+	background: url(../images/left2.png) no-repeat center center;
+	background-size: 28px 28px;	
+}
+#feature .next {
+            width: 65px; 
+            height: 48px; 
+            text-indent: -9999px; 
+	display: block; 
+	float: right; 
+	margin-right: 116px;
+	top: -3px; 
+	background: url(../images/right2.png) no-repeat center center; 
+	background-size: 28px 28px;
+}
+#feature .prev:hover {
+	background-position: center center;
+}
+#feature .next:hover {
+	background-position: center center;
+}
+.featureUl {
+	width: 2800px; 
+	position: relative; 
+	list-style-type: none; 
+	float: left; 
+	margin:0px; 
+	padding:0px;
+	left: 0px;
+}
+.featurebox {
+	width: 280px; 
+	height: 230px; 
+	float: left; 
+	padding-top: 0px;
+	overflow: hidden; 
+	background-image: url(../images/bg-featurebox.jpg);
+	background-repeat: no-repeat; 
+}
+.box img{
+	width:240px;
+	height:180px;
+	border:none;
+}
+#botton-scroll {
+	width: 840px; 
+	height: 200px;
+	float: left;  
+	margin: 0px auto; 
+	z-index: 0;
+}
+#block {
+	position: relative; 
+	width: 840px; 
+	height: 195px; 
+	float: left;
+            margin-left: 15px;
+	margin-top: -40px;
+	padding: 0px;
+	overflow: hidden; 
+	z-index: 0; 
+}
+#block .box {
+	width: 230px; 
+	height: 195px; 
+	float: left; 
+	margin:0px 10px;
+	padding:20px 0px;
+}
+#block .box .feature-thumb {
+	width: 240px; 
+	height: 150px;
+	float: left; 
+	margin: 0px; 
+}

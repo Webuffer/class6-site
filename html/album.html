@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            <title>main album</title>
+            <link rel=stylesheet type=text/css href="../css/album.css"/>
+            <script type="text/javascript" src="../js/min 1.7.2.js"></script>
+            <script type="text/javascript" src="../js/albumScroll.js"></script>
+</head>
+<body>
+        <div id="featureContainer">
+                  <div id="feature">
+                         <div id="block">
+                                <div id="botton-scroll">
+                                        <ul class="featureUl">
+                                               <li class="featureBox">
+                                                      <div class=box>
+                                                            <a href="/" target="_blank"><img alt=""  src="../images/01.jpg"></a>
+                                                      </div>
+                                               </li>
+                                               <li class="featureBox">
+                                                      <div class=box>
+                                                             <a href="/" target="_blank"><img alt=""  src="../images/02.jpg"></a>
+                                                      </div>
+                                               </li>
+                                               <li class="featureBox">
+                                                      <div class=box>
+                                                              <a href="/" target="_blank"><img alt="" src="../images/03.jpg"></a>
+                                                      </div>
+                                               </li>
+                                               <li class="featureBox">
+                                                      <div class=box>
+                                                             <a href="/" target="_blank"><img alt=""  src="../images/04.jpg"></a>
+                                                      </div>
+                                               </li>
+                                               <li class="featureBox">
+                                                      <div class=box>
+                                                             <a href="/" target="_blank"><img alt=""  src="../images/05.jpg"></a>
+                                                      </div>
+                                               </li>
+                                               <li class="featureBox">
+                                                      <div class=box>
+                                                             <a href="/" target="_blank"><img alt=""  src="../images/06.jpg"></a>
+                                                      </div>
+                                               </li>
+                                        </ul>
+                                </div>
+                          </div>
+                          <a class="prev" href="javascript:void();">Previous</a>
+                          <a class="next" href="javascript:void();">Next</a> 
+                  </div>
+        </div>
+<script type="text/javascript">
+$(function() {
+$("#botton-scroll").jCarouselLite({
+btnNext: ".next",
+btnPrev: ".prev"
+});
+});
+
+$(function () {
+$('#top-menu li').hover(
+function () {$('ul', this).slideDown(200);}, 
+function () {$('ul', this).slideUp(200);
+});
+});
+
+$(function () {
+$(".click").click(function(){
+$("#panel").slideToggle("slow");
+$(this).toggleClass("active"); return false;
+}); 
+});
+
+$(function () {
+$('.fade').hover(
+function() {$(this).fadeTo("slow", 0.5);},
+function() {$(this).fadeTo("slow", 5);
+});
+});
+</script>
+
+</body>
+</html>

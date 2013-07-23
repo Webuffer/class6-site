@@ -1,0 +1,481 @@
+/* 全局样式 */
+body{
+	font-size: 15px;
+}
+ul{
+	list-style-type: none;
+}
+.clear{
+	clear: both;
+}
+/* 以上为全局样式 */
+.header{
+	width:100%;
+	height:120px;
+	border-bottom: 1px solid #ddd;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	background-color: rgb(102,102,204);
+}
+.forumPoster{
+	float: left;
+	margin-left: 180px;
+	margin-top: 10px;
+}
+.loginRegister{
+	float: right;
+	margin-right: 215px;
+	margin-top: 10px;
+}
+.loginRegister a{
+	text-decoration: none;
+	margin-left: 5px;
+	color: #fff;
+}
+/* 注册登录弹出框修正 */
+.modalTitle{
+	text-align: center;
+	line-height: 30px;
+}
+.modal-content{
+	text-align: center;
+	margin-top: 20px;
+}
+.modal-content span{
+	margin-right: 10px;
+}
+
+/* 返回班级首页按钮 */
+.back{
+	position: fixed;
+	left:50px;
+	top:250px;
+	cursor: pointer;
+}
+.container{
+	width:950px;
+	height:auto;
+	margin:0px auto;
+	margin-top: 130px;
+}
+/* 论坛统计数量统计栏 */
+.totalBar{
+	width:950px;
+	height:80px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.totalBar ul{
+	list-style-type: none;
+	padding:0px;
+	margin-top: 10px;
+}
+.totalBar ul li{
+	float: left;
+	display: inline;
+	width:80px;
+	height:60px;
+	border-right:1px solid #ddd;
+	text-align: center;
+	line-height: 30px;
+}
+.totalBar ul li em{
+	font-style: normal;
+	display: block;
+}
+.totalBar ul li em a{
+	color:#333;
+}
+/* 搜索 */
+.search{
+	width:950px;
+	height:40px;
+	border:0px;
+}
+.searchPic{
+	width:30px;
+	height:30px;
+	border:0px;
+	margin-top: -3px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+.searchText{
+	width:300px;
+	height:22px;
+	margin-top: 8px;
+}
+.search .btn-info{
+	margin-top: -1px;
+}
+/* 论坛各大主题模块 */
+.techKind, .helper{
+	width:950px;
+	height:auto;
+}
+
+/* 主题标题栏 metro-ui-accordion */
+.accordion{
+	margin-left: 0px;
+}
+.accordion > li > a{
+	margin-top: 5px;
+	display: block;
+	width:950px;
+	height:35px;
+	line-height: 35px;
+	border:1px solid #ddd;
+	background: url(../images/ui-images/expand24-black.png) no-repeat;
+	background-position: 905px 5px;
+	font-size: 15px;
+	font-weight: normal;
+	text-indent: 10px;
+}
+.accordion > li.active > a{
+	display: block;
+	background: url(../images/ui-images/collapse24-black.png) no-repeat;
+	background-position: 905px 5px;
+}
+/* 主题下的内容 */
+.techContent{
+	width:950px;
+	height:170px;
+	border:0px;
+}
+.techContent ul{
+	list-style-type: none;
+	margin-left: 0px;
+}
+.techContent ul li{
+	float: left;
+	display: inline;
+	width:305px;
+	height:150px;
+	border:1px solid #ddd;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+.techContent ul li a{
+	display: block;
+	width: 305px;
+	height: 150px;
+}
+/* 对边缘框架进行调整 */
+.techContent ul li:nth-child(3n){
+	margin-right: -6px;
+	margin-left: 1px;
+}
+.helperContent{
+	width:950px;
+	height:150px;
+	border:0px;
+}
+/* 模块下每个主题的内容，包括今日帖数，总帖数和评论数 */
+.kindTitle{
+	text-align: center;
+	margin-top: 20px;
+}
+.kindDetail ul{
+	list-style-type: none;
+	margin-left: 64px;
+	margin-top: 20px;
+}
+.kindDetail ul li{
+	float: left;
+	display: inline;
+	width:50px;
+	height:50px;
+	border:0px;
+	text-align: center;
+	line-height: 25px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	color: #333;
+}
+.kindDetail ul li em{
+	font-style: normal;
+	display: block;
+}
+/* 论坛助理模块内容 */
+.helperContent ul{
+	list-style-type: none;
+	margin-left: 0px;
+}
+.helperContent ul li{
+	float: left;
+	display: inline;
+	width:305px;
+	height:120px;
+	border:1px solid #ddd;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+/* 对边缘框架进行调整 */
+.helperContent ul li:nth-child(3n){
+	margin-right: -6px;
+	margin-left: 1px;
+}
+.managers a, .coinRule a, .knowledge a{
+	width:305px;
+	height:120px;
+	line-height: 120px;
+	position: absolute;
+	text-align: center;
+}
+/* 页脚 */
+.footer{
+	width:100%;
+	height:80px;
+	border-top:1px solid #ddd;
+	left:0px;
+	position: absolute;
+	margin-top: 5px;
+	background-color: rgb(102, 102, 255);
+}
+.footer p{
+	text-align: center;
+	line-height: 80px;
+	color:#eee;
+}
+.footer p a{
+	text-decoration: none;
+	color:#eee;
+}
+.footer p a:hover{
+	color:#fff;
+}
+
+/* css for  forum-list.html */
+
+/* 当前位置 */
+.site{
+	width:100%;
+	height:40px;
+	line-height: 40px;
+	border-top: 1px solid #ddd;
+	margin-top: 5px;
+}
+/* 论坛单个主题内容统计 */
+.list-in-total{
+	width:100%;
+	height:100px;
+	border-top:1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.list-in-total h1{
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 3px;
+}
+.forum-about span{
+	margin-left: 5px;
+	margin-right: 15px;
+}
+/* 发表新帖 */
+.add-lib{
+	margin-left: 0px;
+	margin-top: 15px;
+	float: left;
+}
+/* 论坛表格头部 */
+.th{
+	width:100%;
+	height:49px;
+	float: left;
+	margin-top: 10px;
+}
+.dropdown{
+	display: inline;
+	margin-right: 20px;
+	line-height: 35px;
+}
+.th table tr td{
+	border: 1px solid #ddd;
+}
+.th table tr td:nth-child(1){
+	width:600px;
+}
+.th table tr td:nth-child(2){
+	width:150px;
+}
+.th table tr td:nth-child(3){
+	width:130px;
+}
+.th table tr td:nth-child(4){
+	width:80px;
+}
+/* 论坛列表具体项 */
+.forum-table{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.forum-table tr{
+	border-bottom: 1px solid #ddd;
+	line-height: 35px;
+	margin-left: 0;
+}
+.forum-table tr td:nth-child(1){
+	width: 30px;
+	display: block;
+	margin-left: 10px;
+}
+.forum-table tr td:nth-child(2){
+	width: 560px;
+}
+.forum-table tr td:nth-child(3){
+	width: 150px;
+}
+.forum-table tr td:nth-child(4){
+	width: 130px;
+}
+.forum-table tr td:nth-child(5){
+	width: 80px;
+}
+
+/* css for forum-content.html */
+
+/* 静态分页条 */
+.page{
+	float: right;
+	margin-top: 23px;
+}
+.page ul{
+	float: right;
+}
+.page ul li{
+	display: inline;
+	border: 1px solid #ddd;
+	padding: 4px 8px;
+}
+.back-lists{
+	width: 75px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border: 1px solid #ddd;
+	float: left;
+	display: block;
+	margin-top: -4px;
+}
+.page .active{
+	cursor: text;
+}
+/* 论坛中单个帖的内容 */
+.list-title-left{
+	float: left;
+	border: 1px solid #ddd;
+	height: 40px;
+	width: 180px;
+	line-height: 40px;
+	text-align: center;
+}
+.list-title-right{
+	float: right;
+	border: 1px solid #ddd;
+	border-left: 0;
+	height: 40px;
+	width: 767px;
+}
+.list-title-right h1{
+	font-size: 17px;
+	text-indent: 10px;
+	margin-top: 2px;
+}
+.list-link{
+	font-weight: normal;
+	font-size: 13px;
+}
+.box-left{
+	width: 180px;
+	height: auto;
+	border: 1px solid #ddd;
+	border-top: 0;
+	float: left;
+}
+.card-top{
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.avatar{
+	width: 136px;
+	height: 136px;
+	border: 1px solid #ddd;
+	margin: 15px auto;
+}
+.avatar a{
+	width: 120px;
+	margin: 8px 8px;
+	display: block;
+}
+.card-id{
+	text-align: center;
+}
+.detail-total{
+	width: 140px;
+	margin: 20px auto;
+}
+.detail-total dt, .detail-total dd{
+	height: 32px;
+	line-height: 32px;
+	text-align: left;
+}
+.detail-total dt{
+	width: 50px;
+	float: left;
+	margin-right: 0;
+}
+.detail-total dd{
+	border-left: 0;
+	width: 87px;
+	float: right;
+	margin-left: 0;
+}
+.card-op{
+	width: 140px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.card-op li{
+	text-indent: 20px;
+	height: 35px;
+	line-height: 35px;
+}
+.card-op .add-friend{
+	background: url('../images/friend_add.png') no-repeat 0% 50%;
+}
+.card-op .sent-info{
+	background: url('../images/info_edit.png') no-repeat 0% 50%;
+}
+.box-right{
+	width:767px;
+	height: auto;
+	border: 1px solid #ddd;
+	border-left: 0;
+	border-top: 0;
+	float: right;
+}
+.content-top{
+	border-bottom: 1px solid #ddd;
+	height: 40px;
+	line-height: 40px;
+}
+.post-time{
+	background: url('../images/clock_edit.png') no-repeat 0 50%;
+	text-indent: 22px;
+	float: left;
+	margin-left: 10px;
+	width: 680px;
+}
+.floor{
+	float: right;
+	width: 73px;
+	text-align: center;
+}
+.content-box{
+	width:767px;
+	height: 500px;
+}
