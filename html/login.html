@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<title>登录</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<!--主页最上面栏包括网站标志和登录操作-->
+	<header>
+		<div class="header-container">
+			<!--顶部彩色装饰条-->
+			<div class="top-bar"></div>
+			<!--logo所在块-->
+			<div class="logo-line">
+				<div class="logo-wrap">
+					<a href="index.html">
+						<img src="../images/logo.png" alt="class6">
+					</a>
+				</div>
+				<div class="right-link">
+					<!--这里定义了两个块，一个未登录状态，一个登录状态，使用时不同时使用-->
+					<div class="no-login">
+						<a href="login.html">登录</a>
+						<span class="v-line">|</span>
+						<a href="regist.html">注册</a>
+						<span class="v-line">|</span>
+						<a href="#">帮助</a>
+					</div>
+					<div class="had-login" style="display:none;">
+						<span class="user-name">某人</span>
+						<span>欢迎你</span>
+						<a href="#">退出</a>
+						<span>|</span>
+						<a href="#">个人中心</a>
+					</div>
+				</div>
+			</div>
+			<!--清除浮动-->
+			<div class="clear"></div>
+		</div>
+	</header>
+	<section>
+		<div class="login">
+			<div class="login-area"> 
+				<div class="titlebar-notlink">
+					<h1>登录</h1>
+				</div>
+				<!-- 登录表单输入情况提醒 -->
+				<div id="loginCheckInfo"></div>
+				<form name="loginForm" method="post" action="" onSubmit="return checkLogin(this,'loginCheckInfo')">
+					<ul class="login-list">
+						<li>
+							学号：
+							<input type="text" name="loginNumber" class="input-normal" id="loginNumber" autofocus title="学号" placeholder="请输入12位完整学号">
+						</li>
+						<li>
+							密码：
+							<input type="password" name="loginPwd" class="input-normal" id="loginPwd" title="登录密码" placeholder="请输入正确的密码">
+						</li>
+						<li>
+							<input type="checkbox" name="rememberPwd" id="rememberPwd">记住密码
+						</li>
+						<li>
+							<input type="submit" name="loginSubmit" class="btn-normal" id="loginSubmit" value="登录">
+							<input type="reset" name="loginReset" class="btn-normal" id="loginReset" value="重置">
+						</li>
+				</form>
+			</div>
+			<div class="site-ad">
+				<div class="titlebar-notlink">
+					<h1>站点宣传</h1>
+				</div>
+				<div class="ad">
+					
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+	<script type="text/javascript" src="../js/check.js"></script>
+</body>
+</html>

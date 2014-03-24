@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<title>注册</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<!--主页最上面栏包括网站标志和登录操作-->
+	<header>
+		<div class="header-container">
+			<!--顶部彩色装饰条-->
+			<div class="top-bar"></div>
+			<!--logo所在块-->
+			<div class="logo-line">
+				<div class="logo-wrap">
+					<a href="index.html">
+						<img src="../images/logo.png" alt="class6">
+					</a>
+				</div>
+				<div class="right-link">
+					<!--这里定义了两个块，一个未登录状态，一个登录状态，使用时不同时使用-->
+					<div class="no-login">
+						<a href="login.html">登录</a>
+						<span class="v-line">|</span>
+						<a href="regist.html">注册</a>
+						<span class="v-line">|</span>
+						<a href="#">帮助</a>
+					</div>
+					<div class="had-login" style="display:none;">
+						<span class="user-name">某人</span>
+						<span>欢迎你</span>
+						<a href="#">退出</a>
+						<span>|</span>
+						<a href="#">个人中心</a>
+					</div>
+				</div>
+			</div>
+			<!--清除浮动-->
+			<div class="clear"></div>
+		</div>
+	</header>
+	<section>
+		<div class="regist">
+			<div class="regist-area">
+				<div class="titlebar-notlink">
+					<h1>注册</h1>
+				</div>
+				<!-- 注册表单输入情况提醒 -->
+				<div id="registCheckInfo"></div>
+				<form name="registForm" method="post" action="" onSubmit="return checkRegist(this,'registCheckInfo')">
+					<ul class="regist-list">
+						<li>
+							姓名：
+							<input type="text" name="registName" class="input-normal" id="registName" autofocus title="姓名" placeholder="长度控制在3-20个字符之间">
+						</li>
+						<li>
+							性别：
+							<input type="radio" name="sex" id="male" value="男" checked="checked">男
+							<input type="radio" name="sex" id="female" value="女">女 
+						</li>
+						<li>
+							学号：
+							<input type="text" name="registNumber" class="input-normal" id="registNumber" title="学号" placeholder="请输入12位完整学号">
+						</li>
+						<li>
+							邮箱：
+							<input type="text" name="registEmail" class="input-normal" id="registEmail" title="邮箱地址" placeholder="请输入一个有效的邮箱">
+						</li>
+						<li>
+							登录密码：
+							<input type="password" name="registPwd" class="input-normal" id="registPwd" title="登录密码" placeholder="请设为由数字或字母组成的6-20位串">
+						</li>
+						<li>
+							确认密码：
+							<input type="password" name="registRepwd" class="input-normal" id="registRepwd" title="确认密码" placeholder="请再次输入设定的密码">
+						</li>
+						<li>
+							<input type="submit" name="registSubmit" class="btn-normal" id="registSubmit" value="注册">
+							<input type="reset" name="registReset" class="btn-normal" id="registReset" value="重置">
+						</li>
+				</form>
+			</div>
+			<div class="regist-help">
+				<div class="titlebar-notlink">
+					<h1>注册帮助</h1>
+				</div>
+				<ul>
+					<li>
+						姓名：注册者的个人信息项，论坛等地方将会显示这个名称，你可以输入中文或英文。
+					</li>
+					<li>
+						学号：登录系统的账号，请务必使用正确的个人学号，限定为12位数字。
+					</li>
+					<li>
+						邮箱：注册者的个人信息项，作为网站与注册者的通信桥梁，比如系统将发送通知或生日提醒到指定邮箱。
+					</li>
+					<li>
+						登录密码：请按要求输入6-20位的字符串，由大小写字母或数字组成，请牢记你的密码。
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+	<script type="text/javascript" src="../js/check.js"></script>
+</body>
+</html>

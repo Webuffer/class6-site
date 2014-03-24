@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<title>帮助信息列表</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<!--主页最上面栏包括网站标志和登录操作-->
+	<header>
+		<div class="header-container">
+			<!--顶部彩色装饰条-->
+			<div class="top-bar"></div>
+			<!--logo所在块-->
+			<div class="logo-line">
+				<div class="logo-wrap">
+					<a href="index.html">
+						<img src="../images/logo.png" alt="class6">
+					</a>
+				</div>
+				<div class="right-link">
+					<!--这里定义了两个块，一个未登录状态，一个登录状态，使用时不同时使用-->
+					<div class="no-login">
+						<a href="login.html">登录</a>
+						<span class="v-line">|</span>
+						<a href="regist.html">注册</a>
+						<span class="v-line">|</span>
+						<a href="#">帮助</a>
+					</div>
+					<div class="had-login" style="display:none;">
+						<span class="user-name">某人</span>
+						<span>欢迎你</span>
+						<a href="#">退出</a>
+						<span>|</span>
+						<a href="#">个人中心</a>
+					</div>
+				</div>
+			</div>
+			<!--清除浮动-->
+			<div class="clear"></div>
+		</div>
+	</header>
+	<!--主页导航条，放在头部下面-->
+	<nav>
+		<ul class="nav-top">
+			<li>
+				<a href="news-list.html">
+					<!--添加导航项图标-->
+					<span class="icon-news"></span>
+					<span>通知</span>
+				</a>
+			</li>
+			<li>
+				<a href="source-list.html">
+					<span class="icon-source"></span>
+					<span>课程资料</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon-birth"></span>
+					<span>生日提醒</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon-forum"></span>
+					<span>讨论中心</span>
+				</a>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</nav>
+	<section>
+		<div class="container">
+			<!--页面路径指示-->
+			<ol class="route-title">
+				<li><a href="index.html">主页</a></li>
+				<li>帮助信息</li>
+			</ol>
+			<table class="help-table">
+				<tr>
+					<th>标题</th>
+					<th>更新时间</th>
+				</tr>
+				<!--这里可以固定一页要显示多少条，比如20条，然后通过底下的换页条来实现换页功能-->
+				<tr>
+					<td>
+						<a href="#" class="help-title">帮助信息标题</a>
+					</td>
+					<td>2014.03.03</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="help-title">帮助信息标题</a>
+					</td>
+					<td>2014.03.03</td>
+				</tr>
+			</table>
+			<!--换页条，可复制到别处使用，但要注意id的使用-->
+			<div class="page-bar">
+				<ul>
+					<li><a href="#">&laquo;</a></li>
+					<li class="current-page"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">...</a></li>
+					<li><a href="#">30</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+				<form name="jumpForm" method="get" action="" onSubmit="" class="jump-form">
+					<input type="text" name="jumpPage" id="jumpPage" class="input-small">
+					<input type="submit" value="跳转至" class="btn-small">
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

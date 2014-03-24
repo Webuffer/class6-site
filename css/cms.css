@@ -1,0 +1,150 @@
+/*
+@cms.css
+@网站后台管理页面的样式
+@2014-03-24
+*/
+/*
+******************************
+公共样式
+******************************
+*/
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	background-color: #F5F5F5;
+	font: 15px/15px "宋体";
+}
+.clear{
+	clear: both;
+}
+/* 统一链接样式 */
+a{
+	text-decoration: none;
+	color: #333;
+}
+	a:hover{
+		color: #e24406;
+	}
+a.colorlink{
+	color: #36cb08;
+}
+/* 页头和页脚 */
+.header{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid rgb(92,92,204);
+	background-color: rgb(92,92,204);
+}
+.header-container{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.cms-logo{
+	width: 300px;
+	float: left;
+}
+.right-link{
+	width: 450px;
+	float: right;
+	margin-top: 14px;
+	text-align: right;
+	color: #fff;
+}
+	.right-link a{
+		color: #fff;
+	}
+	.right-link a:hover{
+		text-decoration: underline;
+	}
+/* 页脚 */
+.footer{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-top: 20px;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	background-color: #FFFFFF;
+}
+	.footer p{
+		text-align: center;
+	}
+/*
+******************************
+cms-index.html
+******************************
+*/
+.container{
+	width: 1200px;
+	height: auto;
+	margin: 15px auto;
+}
+.sidebar{
+	width: 200px;
+	height: auto;
+	float: left;
+	border: 1px solid rgb(112,112,204);
+	background-color: rgb(112,112,204);;
+}
+.main{
+	width: 980px;
+	height: auto;
+	border: 1px solid #ddd;
+	float: right;
+	background-color: #fff;
+}
+.adminmenu{
+	list-style: none;
+}
+	.adminmenu > li{
+		background-color: rgb(112,112,204);
+	}
+		.adminmenu > li > a{
+			display: block;
+			line-height: 35px;
+			width: 200px;
+			height: 35px;
+			color: #fff;
+			text-indent: 10px;
+		}
+			.adminmenu > li > a:hover{
+				background-color: rgb(92,92,204);
+			}
+.submenu{
+	list-style: none;
+}
+	.submenu > li{
+		background-color: rgb(122,122,204);
+	}
+		.submenu > li > a{
+			display: block;
+			line-height: 35px;
+			width: 200px;
+			height: 35px;
+			color: #fff;
+			text-indent: 10px;
+		}
+			.submenu > li > a:hover{
+				text-decoration: underline;
+			}
+/* 菜单栏的图标 */
+.menu-icon-home{
+	width: 16px;
+	height: 16px;
+	background: url(../images/fav.gif) no-repeat;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+.menu-icon-collapse{
+	width: 16px;
+	height: 16px;
+	background: url(../images/collapse.png) no-repeat;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
